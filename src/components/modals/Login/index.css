@@ -1,0 +1,10 @@
+/* .Login__form{
+    dispay:flex;
+    flexDirection:column;
+}
+ */
+
+.Login__btn{
+    margin-top:20px;
+    background-color:black;
+}
