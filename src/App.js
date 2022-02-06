@@ -8,6 +8,7 @@ import Login from './components/modals/Login';
 import Table from './components/Table';
 import { GridColDef } from '@mui/x-data-grid';
 import { createStyles } from '@mui/material/styles';
+import Footer from './components/Footer';
 
 const useStyles = makeStyles((theme) =>
   createStyles({
@@ -111,6 +112,7 @@ function App() {
   return (
     <UserContext.Provider value={{ userData, setUserData }}>
       <div className="App">
+          <div id='content-wrap'>
         <Login open={showLoginModal} handleClose={toggleLoginModal} />
         <Header toggleLoginModal={toggleLoginModal}></Header>
 
@@ -148,6 +150,14 @@ function App() {
           </>
         )}
         <GameModal handleClose={toggleGameModal} open={showGameModal} />
+        {/* <div style={{position:'fixed', bottom:0, 
+        // backgroundColor:'whitesmoke',
+        
+        width:'100%'}}> */}
+          </div>
+
+        {/* <div style={{position:'fixed', bottom:0, backgroundColor:'whitesmoke', width:'100%'}}> */}
+        <Footer/>
       </div>
     </UserContext.Provider>
   );
