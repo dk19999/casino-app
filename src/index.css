@@ -41,6 +41,10 @@ body {
   color:gray;
 }
 
+.capitalize{
+  text-transform:capitalize;
+}
+
 #footer{
   height:2rem;
   position:absolute;
@@ -52,11 +56,20 @@ body {
   .Table{
     width:95%
   }
+  #userInfo{
+    display:none;
+  }
 }
 
 @media only screen and (min-width:992px) {
   .Table{
     width:60%
+  }
+
+  #userInfo{
+    display:flex;
+    margin-left:20px;
+
   }
 }
 
